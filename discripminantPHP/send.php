@@ -14,7 +14,6 @@
             $A = (int)$_POST['number_a'];
             $B = (int)$_POST["number_b"];
             $C = (int)$_POST["number_c"];
-            // var_dump($_POST);
 
             $D=$B*$B-4*$A*$C; 
 
