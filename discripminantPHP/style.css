@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.my-block{
+    width: 400px;
+    height: 600px;
+    background-color: grey;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 200px;
+    gap: 30px;
+    padding-top: 40px;
+
+}
+
+.result{
+    padding-top: 100px;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.green{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+.one{
+    color: purple;
+}
