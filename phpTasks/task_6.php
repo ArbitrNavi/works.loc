@@ -37,61 +37,72 @@
                     <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
 
                     <?php 
-                                        
+                    $array  = [
+                        [
+                            "image" => "img/demo/authors/sunny.png",
+                            "name" => "Sunny A",
+                            "stack" => "UI/UX Expert",
+                            "whoIs" => "Lead Author",
+                            "social" => "https://twitter.com/@myplaneticket",
+                            "social_title" => "@myplaneticket",
+                            "isBanned" => "noBanned",
+                        ],
+                        [
+                            "image" => "img/demo/authors/josh.png",
+                            "name" => "Jos K",
+                            "stack" => "ASP.NET Developer",
+                            "whoIs" => "Partner &amp; Contributor",
+                            "social" => "https://twitter.com/@atlantez",
+                            "social_title" => "@atlantez",
+                            "isBanned" => "noBanned",
+                        ],
+                        [
+                            "image" => "img/demo/authors/jovanni.png",
+                            "name" => "Jovanni Lo",
+                            "stack" => "PHP Developer",
+                            "whoIs" => "Partner &amp; Contributor",
+                            "social" => "https://twitter.com/@lodev09",
+                            "social_title" => "@lodev09",
+                            "isBanned" => "banned",
+                        ],
+                        [
+                            "image" => "img/demo/authors/roberto.png",
+                            "name" => "Roberto R",
+                            "stack" => "Rails Developer",
+                            "whoIs" => "Partner &amp; Contributor",
+                            "social" => "https://twitter.com/@sildur",
+                            "social_title" => "@sildur",
+                            "isBanned" => "banned",
+                        ],
+                    ];
 
+                    foreach($array as $items){
+                        ?>
+                        <div class="<?php echo $items["isBanned"] ?> rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                        <img src="<?php echo $items["image"]; ?>" alt="<?php echo $items["name"]; ?>."
+                             class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                        <div class="ml-2 mr-3">
+                            <h5 class="m-0">
+                                <?php echo $items["name"] ?>. (<?php echo $items["stack"] ?>)
+                                <small class="m-0 fw-300">
+                                    <?php echo $items["whoIs"] ?>
+                                </small>
+                            </h5>
+                            <a href="<?php echo $items["social"] ?>" class="text-info fs-sm" target="_blank"><?php echo $items["social_title"]; ?></a>
+                            -
+                            <a href="https://wrapbootstrap.com/user/myorange" class="text-info fs-sm"
+                               target="_blank" title="Contact <?php echo $items["name"] ?>"><i class="fal fa-envelope"></i></a>
+                        </div>
+                        </div>
+                        <?php
+                    }
+                        
                     ?>
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/sunny.png" alt="Sunny A."
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Sunny A. (UI/UX Expert)
-                                    <small class="m-0 fw-300">
-                                        Lead Author
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@myplaneticket" class="text-info fs-sm" target="_blank">@myplaneticket</a>
-                                -
-                                <a href="https://wrapbootstrap.com/user/myorange" class="text-info fs-sm"
-                                   target="_blank" title="Contact Sunny"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
 
 
 
-
-                        <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/josh.png" alt="Jos K."
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Jos K. (ASP.NET Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@atlantez" class="text-info fs-sm" target="_blank">@atlantez</a>
-                                -
-                                <a href="https://wrapbootstrap.com/user/Walapa" class="text-info fs-sm" target="_blank"
-                                   title="Contact Jos"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div class="banned rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="img/demo/authors/jovanni.png" alt="Jovanni Lo"
-                                 class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Jovanni L. (PHP Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@lodev09" class="text-info fs-sm"
-                                   target="_blank">@lodev09</a> -
-                                <a href="https://wrapbootstrap.com/user/lodev09" class="text-info fs-sm" target="_blank"
-                                   title="Contact Jovanni"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
+                        <!-- 
+                        
                         <div class="banned rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
                             <img src="img/demo/authors/roberto.png" alt="Jovanni Lo"
                                  class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
@@ -107,7 +118,7 @@
                                 <a href="https://wrapbootstrap.com/user/sildur" class="text-info fs-sm" target="_blank"
                                    title="Contact Roberto"><i class="fal fa-envelope"></i></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
