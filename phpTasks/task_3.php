@@ -74,16 +74,6 @@
                                     <?php
                                 }
                             ?>
-                            
-                            
-                            <!-- 
-                            <div class="d-flex">
-                                Осталось дней
-                                <span class="d-inline-block ml-auto">2 дня</span>
-                            </div>
-                            <div class="progress progress-sm mb-g">
-                                <div class="progress-bar bg-primary-300" role="progressbar" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
