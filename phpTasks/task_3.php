@@ -31,35 +31,59 @@
                         </div>
                     </div>
                     <div class="panel-container show">
+                        <?php 
+                            $array = array(
+                                array(
+                                    "title" => "Мои задачи",
+                                    "value" => "7 / 10",
+                                    "status" => "width: 65%",
+                                    "color" => "bg-fusion-400"
+                                ),
+                                array(
+                                    "title" => "Емкость диска",
+                                    "value" => "440 TB",
+                                    "status" => "width: 34%",
+                                    "color" => "bg-success-500"
+                                ),
+                                array(
+                                    "title" => "Пройдено уроков",
+                                    "value" => "77%",
+                                    "status" => "width: 77%",
+                                    "color" => "bg-info-400"
+                                ),
+                                array(
+                                    "title" => "Осталось дней",
+                                    "value" => "2 дня",
+                                    "status" => "width: 84%",
+                                    "color" => "bg-primary-300"
+                                ),
+                            )
+                        ?>
+
                         <div class="panel-content">
-                            <div class="d-flex mt-2">
-                                Мои задачи
-                                <span class="d-inline-block ml-auto">7 / 10</span>
-                            </div>
-                            <div class="progress progress-sm mb-3">
-                                <div class="progress-bar bg-fusion-400" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="d-flex">
-                                Емкость диска
-                                <span class="d-inline-block ml-auto">440 TB</span>
-                            </div>
-                            <div class="progress progress-sm mb-3">
-                                <div class="progress-bar bg-success-500" role="progressbar" style="width: 34%;" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="d-flex">
-                                Пройдено уроков
-                                <span class="d-inline-block ml-auto">77%</span>
-                            </div>
-                            <div class="progress progress-sm mb-3">
-                                <div class="progress-bar bg-info-400" role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                            <?php 
+                                foreach($array as $values){
+                                    ?>
+                                    <div class="d-flex mt-2">
+                                        <?php echo $values["title"]; ?>
+                                        <span class="d-inline-block ml-auto"><?php echo $values["value"]; ?></span>
+                                    </div>
+                                    <div class="progress progress-sm mb-3">
+                                        <div class="progress-bar <?php echo $values["color"]; ?>" role="progressbar" style="<?php echo $values["status"]; ?>" aria-valuenow="<?php echo $values["status"]; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <?php
+                                }
+                            ?>
+                            
+                            
+                            <!-- 
                             <div class="d-flex">
                                 Осталось дней
                                 <span class="d-inline-block ml-auto">2 дня</span>
                             </div>
                             <div class="progress progress-sm mb-g">
                                 <div class="progress-bar bg-primary-300" role="progressbar" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
