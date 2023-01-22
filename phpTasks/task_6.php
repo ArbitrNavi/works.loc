@@ -35,6 +35,11 @@
             <div class="panel-container show">
                 <div class="panel-content">
                     <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
+
+                    <?php 
+                                        
+
+                    ?>
                         <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
                             <img src="img/demo/authors/sunny.png" alt="Sunny A."
                                  class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
@@ -51,6 +56,10 @@
                                    target="_blank" title="Contact Sunny"><i class="fal fa-envelope"></i></a>
                             </div>
                         </div>
+
+
+
+
                         <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
                             <img src="img/demo/authors/josh.png" alt="Jos K."
                                  class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">

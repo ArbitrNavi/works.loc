@@ -37,38 +37,38 @@
                                 <p>Сформируйте массив данных и выведите полностью альбом.</p>
                             </div> -->
                             <?php 
-                                $images = array(
-                                    array(
+                                $images = [
+                                    [
                                         "demo" => "img/demo/gallery/21.jpg",
                                         "image" => "img/demo/gallery/thumb/21.jpg",
                                         "name" => "image",
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         "demo" => "img/demo/gallery/22.jpg",
                                         "image" => "img/demo/gallery/thumb/22.jpg",
                                         "name" => "image",
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         "demo" => "img/demo/gallery/23.jpg",
                                         "image" => "img/demo/gallery/thumb/23.jpg",
                                         "name" => "image",
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         "demo" => "img/demo/gallery/24.jpg",
                                         "image" => "img/demo/gallery/thumb/24.jpg",
                                         "name" => "image",
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         "demo" => "img/demo/gallery/25.jpg",
                                         "image" => "img/demo/gallery/thumb/25.jpg",
                                         "name" => "image",
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         "demo" => "img/demo/gallery/26.jpg",
                                         "image" => "img/demo/gallery/thumb/26.jpg",
                                         "name" => "image",
-                                    ),
-                                );
+                                    ],
+                                ];
                             ?>
                             <div id="js-lightgallery">
                                 <?php 
