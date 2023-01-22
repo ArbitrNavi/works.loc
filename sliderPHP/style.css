@@ -1,6 +1,8 @@
+
+
 .element{
     width: 100px;
-    height: 100px;
+    height: 300px;
     background-color: grey;
     color: #fff;
     font-size: 48px;
@@ -14,5 +16,5 @@
 }
 
 .slider{
-    
+    height: 900px;    
 }
