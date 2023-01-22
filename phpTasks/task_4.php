@@ -36,11 +36,54 @@
                             <!-- <div class="panel-tag">
                                 <p>Сформируйте массив данных и выведите полностью альбом.</p>
                             </div> -->
+                            <?php 
+                                $images = array(
+                                    array(
+                                        "demo" => "img/demo/gallery/21.jpg",
+                                        "image" => "img/demo/gallery/thumb/21.jpg",
+                                        "name" => "image",
+                                    ),
+                                    array(
+                                        "demo" => "img/demo/gallery/22.jpg",
+                                        "image" => "img/demo/gallery/thumb/22.jpg",
+                                        "name" => "image",
+                                    ),
+                                    array(
+                                        "demo" => "img/demo/gallery/23.jpg",
+                                        "image" => "img/demo/gallery/thumb/23.jpg",
+                                        "name" => "image",
+                                    ),
+                                    array(
+                                        "demo" => "img/demo/gallery/24.jpg",
+                                        "image" => "img/demo/gallery/thumb/24.jpg",
+                                        "name" => "image",
+                                    ),
+                                    array(
+                                        "demo" => "img/demo/gallery/25.jpg",
+                                        "image" => "img/demo/gallery/thumb/25.jpg",
+                                        "name" => "image",
+                                    ),
+                                    array(
+                                        "demo" => "img/demo/gallery/26.jpg",
+                                        "image" => "img/demo/gallery/thumb/26.jpg",
+                                        "name" => "image",
+                                    ),
+                                );
+                            ?>
                             <div id="js-lightgallery">
-                                <a class="" href="img/demo/gallery/21.jpg">
+                                <?php 
+                                    foreach($images as $items){
+                                        ?>
+                                            <a class="" href="<?php echo $items["demo"]; ?>">
+                                                <img class="img-responsive" src="<?php echo $items["image"]; ?>" alt="<?php echo $items["name"] ?>">
+                                            </a>
+                                        <?php
+                                    }
+                                ?>
+                                <!-- <a class="" href="img/demo/gallery/21.jpg">
                                     <img class="img-responsive" src="img/demo/gallery/thumb/21.jpg" alt="image">
-                                </a>
-                                <a class="" href="img/demo/gallery/22.jpg">
+                                </a> -->
+                                <!-- <a class="" href="img/demo/gallery/22.jpg">
                                     <img class="img-responsive" src="img/demo/gallery/thumb/22.jpg" alt="image">
                                 </a>
                                 <a class="" href="img/demo/gallery/23.jpg">
@@ -54,7 +97,7 @@
                                 </a>
                                 <a class="" href="img/demo/gallery/26.jpg">
                                     <img class="img-responsive" src="img/demo/gallery/thumb/26.jpg" alt="image">
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>
