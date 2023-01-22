@@ -33,9 +33,40 @@
                     <div class="panel-container show">
                         <div class="panel-content">
                             <ol class="breadcrumb page-breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                                <li class="breadcrumb-item"><a href="#">PHP</a></li>
-                                <li class="breadcrumb-item active">Функции</li>
+                                <?php 
+                                $array = [
+                                    [
+                                        "link" => "#",
+                                        "title" => "Главная",
+                                        "isLink" => true,
+                                    ],
+                                    [
+                                        "link" => "#",
+                                        "title" => "PHP",
+                                        "isLink" => true,
+                                    ],
+                                    [
+                                        "link" => "#",
+                                        "title" => "Функции",
+                                        "isLink" => false,
+                                    ],
+                                ];
+                                
+                                foreach($array as $link){
+                                    if($link["isLink"]){
+                                        ?>
+                                        <li class="breadcrumb-item"><a href="<?php echo $link["link"]; ?>"><?php echo $link["title"]; ?></a></li>
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <li class="breadcrumb-item active"><?php echo $link["title"] ?></li>
+                                        <?php
+                                    }
+                                };
+                                ?>
+                                <?php
+                                ?>
+                                
                             </ol>
                         </div>
                     </div>
