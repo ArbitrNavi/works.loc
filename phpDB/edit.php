@@ -10,12 +10,14 @@
 </head>
 <body>
     <div>
-        <form action="store.php" method="post">
+        <form action="update.php" method="post">
             <label for="name">
-                Имя пользователя
+                Изменить
             </label>
-            <input type="text" name="username" >
-            <button type="submit" class="btn">Добавить</button>
+            <input type="text" name="username" value=""> 
+            <button href="#" type="submit" class="btn">
+                Изменить
+            </button>
         </form>
     </div>
 </body>
