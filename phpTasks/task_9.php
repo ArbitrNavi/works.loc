@@ -47,17 +47,32 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php 
+                                        $array = [
+                                            [
+                                                "id" => 1,
+                                                "name" => "Mark",
+                                                "lastName" => "Otto",
+                                                "userName" => "@mdo"
+                                            ],
+                                        ];
+
+                                        foreach($array as $values){?>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
+                                            <th scope="row"><?php echo $values["id"]; ?></th>
+                                            <td><?php echo $values["name"]; ?></td>
+                                            <td><?php echo $values["lastName"]; ?></td>
+                                            <td><?php echo $values["userName"]; ?></td>
                                             <td>
                                                 <a href="show.php?id=" class="btn btn-info">Редактировать</a>
                                                 <a href="edit.php?id=" class="btn btn-warning">Изменить</a>
                                                 <a href="delete.php?id=" class="btn btn-danger">Удалить</a>
                                             </td>
                                         </tr>
+                                        <?php
+                                        }
+                                        ?>
+                                        
                                         <tr>
                                             <th scope="row">2</th>
                                             <td>Jacob</td>
