@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,10 +12,14 @@
 <body>
     <div>
         <form action="store.php" method="post">
-            <label for="name">
+            <label for="username">
                 Имя пользователя
+                <input type="text" name="username">
             </label>
-            <input type="text" name="username" >
+            <label for="email">
+                Email
+                <input type="text" name="email" >
+            </label>
             <button type="submit" class="btn">Добавить</button>
         </form>
     </div>
