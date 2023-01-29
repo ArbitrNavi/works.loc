@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <form action="update.php" method="post">
-            <label for="name">
-                Изменить
-            </label>
-            <input type="text" name="username" value=""> 
-            <button href="#" type="submit" class="btn">
-                Изменить
-            </button>
-        </form>
-    </div>
+<div>
+    <form action="update.php" method="post">
+        <label for="name">
+            Изменить
+        </label>
+        <input type="text" name="username" value="">
+        <button href="#" type="submit" class="btn">
+            Изменить
+        </button>
+    </form>
+</div>
 </body>
 </html>

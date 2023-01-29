@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpDB/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpDB/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpDB/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpDB/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpDB/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpDB/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/update.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +38,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Программирование/my-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674073304833</updated>
       <workItem from="1674073306404" duration="51000" />
+      <workItem from="1674947692946" duration="185000" />
     </task>
     <servers />
   </component>

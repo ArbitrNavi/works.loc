@@ -1,31 +1,31 @@
 td {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .btn {
-  text-decoration: none;
-  background-color: black;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .btn-normal {
-  background-color: green;
+    background-color: green;
 }
 
 .btn-warning {
-  background-color: orange;
+    background-color: orange;
 }
 
 .btn-dangerous {
-  background-color: red;
+    background-color: red;
 }
 
 tbody td {
-  height: 30px;
+    height: 30px;
 }
