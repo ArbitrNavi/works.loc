@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testProject/getData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testProject/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Завершил 11 задание">
+      <change afterPath="$PROJECT_DIR$/phpTasks/task_12/data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpTasks/task_13/data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpTasks/task_11/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_11/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpTasks/task_11/task_11.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_11/task_11.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpTasks/task_12.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpTasks/task_12.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_12/task_12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpTasks/task_13.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_13/task_13.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +21,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e3ae2b3e-308e-44b9-8420-2b76ed41ac6a" />
+        <option name="url" value="https://github.com/ArbitrNavi/works.loc.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,17 +53,29 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/modules/php/PHP_7.4/php.exe",
+    "last_opened_file_path": "C:/OSPanel/domains/works.loc/phpTasks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.PHP",
+    "settings.editor.splitter.proportion": "0.310559",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\works.loc\phpTasks" />
       <recent name="C:\OSPanel\domains\works.loc\testProject\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\works.loc\phpTasks\task_13" />
+      <recent name="C:\OSPanel\domains\works.loc\phpTasks\task_12" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,11 +90,27 @@
       <workItem from="1674947692946" duration="185000" />
       <workItem from="1674994947406" duration="4288000" />
       <workItem from="1675016829715" duration="3577000" />
-      <workItem from="1675056413150" duration="22097000" />
+      <workItem from="1675056413150" duration="28001000" />
     </task>
+    <task id="LOCAL-00001" summary="Завершил 11 задание">
+      <created>1675085582299</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675085582299</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Завершил 11 задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершил 11 задание" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
