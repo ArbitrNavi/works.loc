@@ -3,10 +3,16 @@
 class Person {
     public $name;
     public $age;
+    const CITY = "5";
+
+    public function __construct($name, $age){
+        $this->name = $name;
+        $this->age = $age;
+    }
+
 
     public function sayHello() {
-        $result = "Меня зовут " . $this->name . ", и мне " . $this->age . " лет " . "<br>";
-        return $result;
+        return "Меня зовут " . $this->name . ", и мне " . $this->age . " лет " . "<br>";
     }
 
     public function setName($name) {
@@ -18,18 +24,9 @@ class Person {
     }
 }
 
-$myPerson = new Person;
+$myPerson = new Person("Murat", 18);
 
-$myPerson->setName("Мурат");
-$myPerson->setAge(18);
-
-echo $myPerson->sayHello();
+//$myPerson->setName("Мурат");
+//$myPerson->setAge(18);
 
 
-
-$myPerson2 = new Person;
-
-$myPerson2->setName("Ник");
-$myPerson2->setAge(33);
-
-echo $myPerson2->sayHello();
