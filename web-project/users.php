@@ -11,7 +11,6 @@ $currentUser = $_SESSION['user'];
 $users = get_all_users();
 
 var_dump($currentUser);
-
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +91,7 @@ var_dump($currentUser);
         <?php foreach ($users as $user): ?>
             <div class="col-xl-4">
                 <div id="c_1" class="card border shadow-0 mb-g shadow-sm-hover"
-                     data-filter-tags="<?php echo $user['name']; ?>">
+                     data-filter-tags="<?php echo mb_strtolower($user['name']); ?>">
                     <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                         <div class="d-flex flex-row align-items-center">
                                 <span class="status status-<?php echo $user['status'] ?> mr-3">
@@ -129,8 +128,6 @@ var_dump($currentUser);
                                         </a>
                                     </div>
                                 <?php } ?>
-
-
                                 <span class="text-truncate text-truncate-xl"><?php echo $user['job']; ?>.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
@@ -151,13 +148,13 @@ var_dump($currentUser);
                                 <i class="fas fa-map-pin mr-2"></i> <?php echo $user['address']; ?>
                             </address>
                             <div class="d-flex flex-row">
-                                <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#4680C2">
+                                <a href="<?php echo $user['vk'] ?>" class="mr-2 fs-xxl" style="color:#4680C2">
                                     <i class="fab fa-vk"></i>
                                 </a>
-                                <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#38A1F3">
+                                <a href="<?php echo $user['telegram'] ?>" class="mr-2 fs-xxl" style="color:#38A1F3">
                                     <i class="fab fa-telegram"></i>
                                 </a>
-                                <a href="javascript:void(0);" class="mr-2 fs-xxl" style="color:#E1306C">
+                                <a href="<?php echo $user['instagram'] ?>" class="mr-2 fs-xxl" style="color:#E1306C">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
