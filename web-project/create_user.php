@@ -7,11 +7,6 @@ if (is_not_loggin() || !is_admin($_SESSION['user'])) {
     redirect_to("page_login.php");
 }
 
-
-echo "<pre>";
-var_dump($_SESSION);
-echo "</pre>";
-
 ?>
 
 
@@ -60,6 +55,14 @@ echo "</pre>";
     <div class="subheader">
         <h1 class="subheader-title">
             <i class='subheader-icon fal fa-plus-circle'></i> Добавить пользователя
+            <?php if (isset($_SESSION['flesh-message'])) { ?>
+                <div class="alert alert-<?php echo $_SESSION['alert'] ?>">
+                    <?php
+                    echo $_SESSION['flesh-message'];
+                    unset($_SESSION['flesh-message'])
+                    ?>
+                </div>
+            <?php } ?>
         </h1>
     </div>
     <form action="./dataPHP/createUser.php" method="POST">
@@ -108,14 +111,7 @@ echo "</pre>";
                         <div class="panel-content">
                             <!-- email -->
                             <div class="form-group">
-                                <?php if (isset($_SESSION['flesh-message'])) { ?>
-                                    <div class="alert alert-<?php echo $_SESSION['alert'] ?>">
-                                        <?php
-                                        echo $_SESSION['flesh-message'];
-                                        unset($_SESSION['flesh-message'])
-                                        ?>
-                                    </div>
-                                <?php } ?>
+
                                 <label class="form-label" for="simpleinput">Email</label>
                                 <input name="email" type="text" id="simpleinput" class="form-control">
                             </div>
