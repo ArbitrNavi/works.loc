@@ -10,7 +10,6 @@ if (is_not_loggin()) {
 $currentUser = $_SESSION['user'];
 $users = get_all_users();
 
-var_dump($currentUser);
 ?>
 
 <!DOCTYPE html>
