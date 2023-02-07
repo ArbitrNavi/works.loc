@@ -24,8 +24,24 @@ if (!empty(get_user_with_email($email))) {
     redirect_to("./../create_user.php");
 } else {
     add_user_db($email, $password);
-    edited_user_values($email, $name, $job, $tel, $address, $status, $avatar, $vk, $telegram, $instagram);
+    $currentID = get_user_with_id($email);
+    if (!empty($avatar)){
+        setUserField($currentID, 'avatar', $avatar);
+    } else {
+        $avatar = 'img/demo/avatars/avatar-m.png';
+        setUserField($currentID, 'avatar', $avatar);
+    }
+    setUserField($currentID, 'name', $name);
+    setUserField($currentID, 'job', $job);
+    setUserField($currentID, 'phone', $tel);
+    setUserField($currentID, 'address', $address);
+    setUserField($currentID, 'status', $status);
+    setUserField($currentID, 'vk', $vk);
+    setUserField($currentID, 'telegram', $telegram);
+    setUserField($currentID, 'instagram', $instagram);
+
     redirect_to('./../users.php');
 }
+
 
 
