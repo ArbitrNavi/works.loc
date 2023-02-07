@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="файлы">
-      <change afterPath="$PROJECT_DIR$/web-project/dataPHP/createUser.php" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Приколдесные штуки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-project/create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/createUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/createUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-project/dataPHP/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/function.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-project/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/users.php" afterDir="false" />
     </list>
@@ -107,7 +107,8 @@
       <workItem from="1675600989717" duration="194000" />
       <workItem from="1675601201945" duration="165000" />
       <workItem from="1675606492120" duration="6844000" />
-      <workItem from="1675631919631" duration="12628000" />
+      <workItem from="1675631919631" duration="12743000" />
+      <workItem from="1675773059377" duration="7217000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -172,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675592108482</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Настроил создание пользователя через админа">
+      <created>1675722019554</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675722019554</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Приколдесные штуки">
+      <created>1675722048151</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675722048151</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +202,9 @@
     <MESSAGE value="Настроил регистрацию пользователя" />
     <MESSAGE value="SQL запросы" />
     <MESSAGE value="файлы" />
-    <option name="LAST_COMMIT_MESSAGE" value="файлы" />
+    <MESSAGE value="Настроил создание пользователя через админа" />
+    <MESSAGE value="Приколдесные штуки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Приколдесные штуки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
