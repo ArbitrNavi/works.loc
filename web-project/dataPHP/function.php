@@ -82,6 +82,12 @@ function get_user_with_email($email)
     return $statement->fetch(PDO::FETCH_ASSOC);
 }
 
+function get_user_with_id($email)
+{
+    $result = get_user_with_email($email)['id'];
+    return $result;
+}
+
 function add_user_db($email, $password)
 {
     $pdo       = connect_db();
@@ -95,32 +101,36 @@ function add_user_db($email, $password)
     );
 }
 
-function edited_user_values($email, $name, $job, $tel, $address, $status, $avatar, $vk, $telegram, $instagram)
+function setUserField($id = false, $field = false, $value = null)
 {
-    $currentUser = get_user_with_email($email)['id'];
-    $pdo         = connect_db();
-    $sql         = 'UPDATE users SET name=:name, job=:job, phone=:tel, address=:address, status=:status, avatar=:avatar, vk=:vk, telegram=:telegram, instagram=:instagram WHERE id=:id';
-    $statement   = $pdo->prepare($sql);
+    if ($id && $field) {
+        $setData = [
+            'id'    => $id,
+            'value' => $value,
+        ];
 
-    if (!empty($avatar)){
-        $avatar = $avatar;
+        $pdo       = connect_db();
+        $sql       = 'UPDATE users SET ' . $field . '=:value WHERE id=:id';
+        $statement = $pdo->prepare($sql);
+        return $statement->execute($setData);
     } else {
-        $avatar = 'img/demo/avatars/avatar-m.png';
+        return false;
     }
+}
 
-    $statement->execute(
-        [
-            'name'      => $name,
-            'job'       => $job,
-            'tel'       => $tel,
-            'address'   => $address,
-            'status'    => $status,
-            'avatar'    => $avatar,
-            'vk'        => $vk,
-            'telegram'  => $telegram,
-            'instagram' => $instagram,
-            'id'        => $currentUser,
-        ]
-    );
+function getUserField($id = false, $field = false)
+{
+    if ($id && $field) {
+        $getData = [
+            'id' => $id,
+        ];
+
+        $pdo       = connect_db();
+        $sql       = 'SELECT ' . $field . ' FROM users WHERE id=:id';
+        $statement = $pdo->prepare($sql);
+        $statement->execute($getData);
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result[$field];
+    }
 }
 
