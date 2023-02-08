@@ -65,7 +65,7 @@ if (is_not_loggin() || !is_admin($_SESSION['user'])) {
             <?php } ?>
         </h1>
     </div>
-    <form action="./dataPHP/createUser.php" method="POST">
+    <form action="./dataPHP/createUser.php" method="POST" enctype="multipart/form-data">
         <div class="row">
             <div class="col-xl-6">
                 <div id="panel-1" class="panel">
@@ -135,7 +135,7 @@ if (is_not_loggin() || !is_admin($_SESSION['user'])) {
 
                             <div class="form-group">
                                 <label class="form-label" for="example-fileinput">Загрузить аватар</label>
-                                <input name="avatar" type="file" id="example-fileinput" class="form-control-file">
+                                <input name="secondary" type="file" id="example-fileinput" class="form-control-file">
                             </div>
                         </div>
                     </div>

@@ -12,11 +12,11 @@ $job       = $_POST['job'];
 $phone     = $_POST['phone'];
 $address   = $_POST['address'];
 $status    = $_POST['status'];
-$avatar    = $_POST['avatar'];
 $vk        = $_POST['vk'];
 $telegram  = $_POST['telegram'];
 $instagram = $_POST['instagram'];
 
+var_dump($_FILES['secondary']);
 
 if (!empty(get_user_with_email($email))) {
     $_SESSION['flesh-message'] = "Пользователь с таким email уже существует";
@@ -27,11 +27,23 @@ if (!empty(get_user_with_email($email))) {
     $_SESSION['alert']         = 'success';
     add_user_db($email, $password);
     $currentID = get_user_with_id($email);
-    if (!empty($avatar)) {
+
+
+    if ($_FILES['secondary']['name'] == "") {
+        $avatar = 'unknow_user.png';
         setUserField($currentID, 'avatar', $avatar);
-    } else {
-        $avatar = 'img/demo/avatars/avatar-m.png';
-        setUserField($currentID, 'avatar', $avatar);
+    } else if (!empty($_FILES['secondary'])) {
+        $file    = $_FILES['secondary'];
+        $imgName = $file['name'];
+        $upOne   = dirname(__DIR__, 1);
+
+        $pathFile = $upOne . '/img/demo/avatars/' . $imgName;
+
+        if (!move_uploaded_file($file['tmp_name'], $pathFile)) {
+            echo 'Файл не смог загрузиться';
+        }
+
+        setUserField($currentID, 'avatar', $imgName);
     }
     setUserField($currentID, 'name', $name);
     setUserField($currentID, 'job', $job);

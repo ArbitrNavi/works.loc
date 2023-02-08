@@ -56,15 +56,12 @@ $currentID = $_GET['id'];
                             </div>
                             <div class="panel-content">
                                 <div class="form-group">
-                                    <img src="<?php echo getUserField($currentID, 'avatar')?>" alt="" class="img-responsive" width="200">
+                                    <img src="./img/demo/avatars/<?php echo getUserField($currentID, 'avatar')?>" alt="" class="img-responsive" width="200">
                                 </div>
-
                                 <div class="form-group">
                                     <label class="form-label" for="example-fileinput">Выберите аватар</label>
                                     <input name="avatar" type="file" id="example-fileinput" class="form-control-file">
                                 </div>
-
-
                                 <div class="col-md-12 mt-3 d-flex flex-row-reverse">
                                     <button class="btn btn-warning">Загрузить</button>
                                 </div>

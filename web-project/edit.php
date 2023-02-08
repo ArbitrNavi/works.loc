@@ -43,7 +43,6 @@ require ('dataPHP/function.php');
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-plus-circle'></i> Редактировать
             </h1>
-
         </div>
         <form action="./dataPHP/edit_profile.php?id=<?php echo $_GET['id'] ?>" method="post">
             <div class="row">

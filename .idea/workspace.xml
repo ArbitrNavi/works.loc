@@ -4,14 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Исправил мелкие ошибки">
-      <change afterPath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-project/dataPHP/edit_status.php" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Создал функцию добавления пользователя">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/createUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/createUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/edit_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/edit_profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-admin-lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-admin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-j.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-k.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/img/demo/avatars/avatar-m.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web-project/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/media.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-project/page_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/page_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/status.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/status.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-project/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/users.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +128,10 @@
       <workItem from="1675631919631" duration="12743000" />
       <workItem from="1675773059377" duration="11396000" />
       <workItem from="1675798348994" duration="2952000" />
-      <workItem from="1675847737347" duration="8268000" />
+      <workItem from="1675847737347" duration="8688000" />
+      <workItem from="1675878585225" duration="1914000" />
+      <workItem from="1675889450817" duration="1000" />
+      <workItem from="1675892132969" duration="5364000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -269,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675848052710</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Создал функцию добавления пользователя">
+      <created>1675864951214</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1675864951214</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +329,8 @@
     <MESSAGE value="Подготовил вёрстку для php" />
     <MESSAGE value="Редактирование первичных данных" />
     <MESSAGE value="Исправил мелкие ошибки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил мелкие ошибки" />
+    <MESSAGE value="Создал функцию добавления пользователя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал функцию добавления пользователя" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

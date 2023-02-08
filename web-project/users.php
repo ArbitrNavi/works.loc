@@ -10,7 +10,9 @@ if (is_not_loggin()) {
 $currentUser = $_SESSION['user'];
 $users       = get_all_users();
 
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -99,7 +101,7 @@ $users       = get_all_users();
                                 <span class="status status-<?php echo $user['status'] ?> mr-3">
                                     <a href="page_profile.php?id=<?php echo $user['id'] ?>">
                                         <span class="rounded-circle profile-image d-block "
-                                              style="background-image:url('<?php echo $user['avatar']; ?>'); background-size: cover;"></span>
+                                              style="background-image:url('./img/demo/avatars/<?php echo $user['avatar'] ?>'); background-size: cover; background-position: center;"></span>
                                     </a>
                                 </span>
                             <div class="info-card-text flex-1">

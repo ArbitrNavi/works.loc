@@ -12,4 +12,4 @@ setUserField($currentID, 'address', $_POST['address']);
 $_SESSION['flesh-message'] = 'Профиль успешно обновлён.';
 $_SESSION['alert'] = 'success';
 
-redirect_to('../users.php');
+redirect_to('../page_profile.php?id=' . $currentID);
