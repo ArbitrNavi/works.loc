@@ -1,3 +1,10 @@
+<?php
+
+require ('dataPHP/function.php');
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +45,7 @@
             </h1>
 
         </div>
-        <form action="">
+        <form action="./dataPHP/edit_profile.php?id=<?php echo $_GET['id'] ?>" method="post">
             <div class="row">
                 <div class="col-xl-6">
                     <div id="panel-1" class="panel">
@@ -50,25 +57,25 @@
                                 <!-- username -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Имя</label>
-                                    <input type="text" id="simpleinput" class="form-control" value="Иван иванов">
+                                    <input name="name" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'name') ?>">
                                 </div>
 
                                 <!-- title -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Место работы</label>
-                                    <input type="text" id="simpleinput" class="form-control" value="Marlin Веб-разработчик">
+                                    <input name="job" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'job') ?>">
                                 </div>
 
                                 <!-- tel -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Номер телефона</label>
-                                    <input type="text" id="simpleinput" class="form-control" value="8 888 8888 88">
+                                    <input name="phone" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'phone') ?>">
                                 </div>
 
                                 <!-- address -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Адрес</label>
-                                    <input type="text" id="simpleinput" class="form-control" value="Восточные Королевства, Штормград">
+                                    <input name="address" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'address') ?>">
                                 </div>
                                 <div class="col-md-12 mt-3 d-flex flex-row-reverse">
                                     <button class="btn btn-warning">Редактировать</button>
