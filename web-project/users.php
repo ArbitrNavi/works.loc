@@ -58,7 +58,8 @@ $users       = get_all_users();
 <main id="js-page-content" role="main" class="page-content mt-3">
     <?php if (isset($_SESSION['flesh-message'])) { ?>
         <div class="alert alert-<?php echo $_SESSION['alert'] ?>">
-            <?php echo  $_SESSION['flesh-message']; unset($_SESSION['flesh-message']) ?>
+            <?php echo $_SESSION['flesh-message'];
+            unset($_SESSION['flesh-message']) ?>
         </div>
     <?php } ?>
     <div class="subheader">
@@ -96,8 +97,10 @@ $users       = get_all_users();
                     <div class="card-body border-faded border-top-0 border-left-0 border-right-0 rounded-top">
                         <div class="d-flex flex-row align-items-center">
                                 <span class="status status-<?php echo $user['status'] ?> mr-3">
-                                    <span class="rounded-circle profile-image d-block "
-                                          style="background-image:url('<?php echo $user['avatar']; ?>'); background-size: cover;"></span>
+                                    <a href="page_profile.php?id=<?php echo $user['id'] ?>">
+                                        <span class="rounded-circle profile-image d-block "
+                                              style="background-image:url('<?php echo $user['avatar']; ?>'); background-size: cover;"></span>
+                                    </a>
                                 </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -163,6 +166,7 @@ $users       = get_all_users();
                     </div>
                 </div>
             </div>
+
         <?php endforeach; ?>
     </div>
 </main>

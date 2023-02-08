@@ -134,3 +134,7 @@ function getUserField($id = false, $field = false)
     }
 }
 
+function add_avatar() {
+
+}
+

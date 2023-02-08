@@ -1,3 +1,11 @@
+<?php
+
+require ('dataPHP/function.php');
+
+$currentID = $_GET['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +46,7 @@
             </h1>
 
         </div>
-        <form action="">
+        <form action="./dataPHP/edit_avatar.php?id=<?php echo $currentID; ?>" method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-xl-6">
                     <div id="panel-1" class="panel">
@@ -48,12 +56,12 @@
                             </div>
                             <div class="panel-content">
                                 <div class="form-group">
-                                    <img src="img/demo/authors/josh.png" alt="" class="img-responsive" width="200">
+                                    <img src="<?php echo getUserField($currentID, 'avatar')?>" alt="" class="img-responsive" width="200">
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label" for="example-fileinput">Выберите аватар</label>
-                                    <input type="file" id="example-fileinput" class="form-control-file">
+                                    <input name="avatar" type="file" id="example-fileinput" class="form-control-file">
                                 </div>
 
 
