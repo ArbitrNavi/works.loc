@@ -9,7 +9,7 @@ $email     = $_POST['email'];
 $password  = $_POST['password'];
 $name      = $_POST['name'];
 $job       = $_POST['job'];
-$tel       = $_POST['tel'];
+$phone     = $_POST['phone'];
 $address   = $_POST['address'];
 $status    = $_POST['status'];
 $avatar    = $_POST['avatar'];
@@ -23,9 +23,11 @@ if (!empty(get_user_with_email($email))) {
     $_SESSION['alert']         = 'danger';
     redirect_to("./../create_user.php");
 } else {
+    $_SESSION['flesh-message'] = "Профиль успешно добавлен.";
+    $_SESSION['alert']         = 'success';
     add_user_db($email, $password);
     $currentID = get_user_with_id($email);
-    if (!empty($avatar)){
+    if (!empty($avatar)) {
         setUserField($currentID, 'avatar', $avatar);
     } else {
         $avatar = 'img/demo/avatars/avatar-m.png';
@@ -33,7 +35,7 @@ if (!empty(get_user_with_email($email))) {
     }
     setUserField($currentID, 'name', $name);
     setUserField($currentID, 'job', $job);
-    setUserField($currentID, 'phone', $tel);
+    setUserField($currentID, 'phone', $phone);
     setUserField($currentID, 'address', $address);
     setUserField($currentID, 'status', $status);
     setUserField($currentID, 'vk', $vk);
