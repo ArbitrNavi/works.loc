@@ -89,7 +89,7 @@ if (is_not_loggin() || !is_admin($_SESSION['user'])) {
                             <!-- tel -->
                             <div class="form-group">
                                 <label class="form-label" for="simpleinput">Номер телефона</label>
-                                <input name="tel" type="text" id="simpleinput" class="form-control">
+                                <input name="phone" type="text" id="simpleinput" class="form-control">
                             </div>
 
                             <!-- address -->
