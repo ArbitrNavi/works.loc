@@ -8,7 +8,7 @@ if (is_not_loggin()) {
 }
 
 $currentUser = $_SESSION['user'];
-$users = get_all_users();
+$users       = get_all_users();
 
 ?>
 
@@ -56,9 +56,11 @@ $users = get_all_users();
 </nav>
 
 <main id="js-page-content" role="main" class="page-content mt-3">
-    <div class="alert alert-success">
-        Профиль успешно обновлен.
-    </div>
+    <?php if (isset($_SESSION['flesh-message'])) { ?>
+        <div class="alert alert-<?php echo $_SESSION['alert'] ?>">
+            <?php echo  $_SESSION['flesh-message']; unset($_SESSION['flesh-message']) ?>
+        </div>
+    <?php } ?>
     <div class="subheader">
         <h1 class="subheader-title">
             <i class='subheader-icon fal fa-users'></i> Список пользователей
@@ -101,23 +103,23 @@ $users = get_all_users();
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
                                    data-toggle="dropdown" aria-expanded="false">
                                     <?php echo $user['name']; ?>
-                                    <?php if (is_admin($currentUser) || my_profile($user, $currentUser)){ ?>
-                                    <i class="fal fas fa-cog fa-fw d-inline-block ml-1 fs-md"></i>
-                                    <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
+                                    <?php if (is_admin($currentUser) || my_profile($user, $currentUser)) { ?>
+                                        <i class="fal fas fa-cog fa-fw d-inline-block ml-1 fs-md"></i>
+                                        <i class="fal fa-angle-down d-inline-block ml-1 fs-md"></i>
                                     <?php } ?>
                                 </a>
-                                <?php if (is_admin($currentUser) || my_profile($user, $currentUser)){ ?>
+                                <?php if (is_admin($currentUser) || my_profile($user, $currentUser)) { ?>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="edit.php">
+                                        <a class="dropdown-item" href="edit.php?id=<?php echo $user['id'] ?>">
                                             <i class="fa fa-edit"></i>
                                             Редактировать</a>
-                                        <a class="dropdown-item" href="security.php">
+                                        <a class="dropdown-item" href="security.php?id=<?php echo $user['id'] ?>">
                                             <i class="fa fa-lock"></i>
                                             Безопасность</a>
-                                        <a class="dropdown-item" href="status.php">
+                                        <a class="dropdown-item" href="status.php?id=<?php echo $user['id'] ?>">
                                             <i class="fa fa-sun"></i>
                                             Установить статус</a>
-                                        <a class="dropdown-item" href="media.php">
+                                        <a class="dropdown-item" href="media.php?id=<?php echo $user['id'] ?>">
                                             <i class="fa fa-camera"></i>
                                             Загрузить аватар
                                         </a>

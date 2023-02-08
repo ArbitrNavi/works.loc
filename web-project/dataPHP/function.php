@@ -13,7 +13,7 @@ function my_profile($user, $currentUser)
 {
     if ($user['id'] == $currentUser['id']) {
         return true;
-        exit;
+        exit();
     }
     return false;
 }
