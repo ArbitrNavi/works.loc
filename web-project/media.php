@@ -1,8 +1,14 @@
 <?php
 
+session_start();
+
 require ('dataPHP/function.php');
 
 $currentID = $_GET['id'];
+
+if (!is_admin($_SESSION["user"]) && $_SESSION['user']['id'] != $currentID){
+    redirect_to('page_login.php');
+}
 
 ?>
 

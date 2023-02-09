@@ -1,8 +1,14 @@
 <?php
 
+session_start();
+
 require ('dataPHP/function.php');
 
+$currentID = $_GET['id'];
 
+if (!is_admin($_SESSION["user"]) && $_SESSION['user']['id'] != $currentID){
+    redirect_to('page_login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +50,7 @@ require ('dataPHP/function.php');
                 <i class='subheader-icon fal fa-plus-circle'></i> Редактировать
             </h1>
         </div>
-        <form action="./dataPHP/edit_profile.php?id=<?php echo $_GET['id'] ?>" method="post">
+        <form action="./dataPHP/edit_profile.php?id=<?php echo $currentID ?>" method="post">
             <div class="row">
                 <div class="col-xl-6">
                     <div id="panel-1" class="panel">
@@ -56,25 +62,25 @@ require ('dataPHP/function.php');
                                 <!-- username -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Имя</label>
-                                    <input name="name" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'name') ?>">
+                                    <input name="name" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($currentID, 'name') ?>">
                                 </div>
 
                                 <!-- title -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Место работы</label>
-                                    <input name="job" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'job') ?>">
+                                    <input name="job" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($currentID, 'job') ?>">
                                 </div>
 
                                 <!-- tel -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Номер телефона</label>
-                                    <input name="phone" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'phone') ?>">
+                                    <input name="phone" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($currentID, 'phone') ?>">
                                 </div>
 
                                 <!-- address -->
                                 <div class="form-group">
                                     <label class="form-label" for="simpleinput">Адрес</label>
-                                    <input name="address" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($_GET['id'], 'address') ?>">
+                                    <input name="address" type="text" id="simpleinput" class="form-control" value="<?php echo getUserField($currentID, 'address') ?>">
                                 </div>
                                 <div class="col-md-12 mt-3 d-flex flex-row-reverse">
                                     <button class="btn btn-warning">Редактировать</button>

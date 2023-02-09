@@ -54,7 +54,9 @@ $currentID = $_GET['id'];
                         <div class="row no-gutters row-grid">
                             <div class="col-12">
                                 <div class="d-flex flex-column align-items-center justify-content-center p-4">
-                                    <img src="<?php echo getUserField($currentID, 'avatar'); ?>" class="rounded-circle shadow-2 img-thumbnail" alt="">
+                                    <div style="width: 100px; height: 100px;">
+                                        <img src="./img/demo/avatars/<?php echo getUserField($currentID, 'avatar'); ?>" style="width: 100%; height: 100%; object-fit: cover"  class="rounded-circle shadow-2 img-thumbnail" alt="">
+                                    </div>
                                     <h5 class="mb-0 fw-700 text-center mt-3">
                                         <?php echo getUserField($currentID, 'name') ?>
                                         <small class="text-muted mb-0"></small>

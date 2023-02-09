@@ -134,7 +134,13 @@ function getUserField($id = false, $field = false)
     }
 }
 
-function add_avatar() {
-
+function delete_user($id){
+    $arr = [
+        'id' => $id,
+    ];
+    $pdo = connect_db();
+    $sql = 'DELETE FROM users WHERE id=:id';
+    $statement = $pdo->prepare($sql);
+    $statement->execute($arr);
+    redirect_to('../users.php');
 }
-
