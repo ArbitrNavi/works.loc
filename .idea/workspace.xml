@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Создал функцию добавление фото пользователя">
-      <change afterPath="$PROJECT_DIR$/web-project/dataPHP/delete_user.php" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Добавил функцию удаления пользователей и завершил проект">
+      <change afterPath="$PROJECT_DIR$/advenced_oop/dataBasesOOP.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/page_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/page_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/users.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/works.loc/web-project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;tasks.servers&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.310559&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/OSPanel/domains/works.loc/web-project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.splitter.proportion": "0.22733814",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\works.loc\web-project" />
@@ -115,7 +113,13 @@
       <workItem from="1675847737347" duration="8688000" />
       <workItem from="1675878585225" duration="1914000" />
       <workItem from="1675889450817" duration="1000" />
-      <workItem from="1675892132969" duration="8741000" />
+      <workItem from="1675892132969" duration="9546000" />
+      <workItem from="1676020510463" duration="7881000" />
+      <workItem from="1676031605134" duration="5761000" />
+      <workItem from="1676104261750" duration="5538000" />
+      <workItem from="1676200724054" duration="2272000" />
+      <workItem from="1676236709191" duration="600000" />
+      <workItem from="1676278628346" duration="5198000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -285,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675899927176</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Добавил функцию удаления пользователей и завершил проект">
+      <created>1675969933117</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1675969933117</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +333,8 @@
     <MESSAGE value="Исправил мелкие ошибки" />
     <MESSAGE value="Создал функцию добавления пользователя" />
     <MESSAGE value="Создал функцию добавление фото пользователя" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создал функцию добавление фото пользователя" />
+    <MESSAGE value="Добавил функцию удаления пользователей и завершил проект" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил функцию удаления пользователей и завершил проект" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
