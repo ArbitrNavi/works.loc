@@ -2,4 +2,7 @@
 include "dataBase/QueryBuilder.php";
 include "dataBase/Connection.php";
 
-return new QueryBuilder(Connection::make());
+$config = include "config.php";
+
+
+return new QueryBuilder(Connection::make($config['databases']));

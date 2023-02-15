@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Мелкие правки">
-      <change afterPath="$PROJECT_DIR$/advenced_oop/dataBasesOOP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsAJAX/1625836754_4-kartinkin-com-p-oboi-s-polochkami-dlya-yarlikov-krasivie-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsAJAX/IMG54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsAJAX/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsAJAX/jquery-3.6.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsAJAX/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/Connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/QueryBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/start.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpTasks/task_19v2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpTasks/upload.v2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/works.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/works.loc.iml" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="ООП объекты">
+      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/advencedOOP.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/advencedOOP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpTasks/task_19.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_19.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/start.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +129,7 @@
       <workItem from="1676314407325" duration="1035000" />
       <workItem from="1676373419570" duration="5616000" />
       <workItem from="1676410581237" duration="683000" />
-      <workItem from="1676451411961" duration="8993000" />
+      <workItem from="1676451411961" duration="9809000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -335,7 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676460275498</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ООП объекты">
+      <created>1676465862877</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676465862877</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ООП объекты">
+      <created>1676466104574</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466104574</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +376,8 @@
     <MESSAGE value="Алгоритм перебора массива" />
     <MESSAGE value="Разделил все функции" />
     <MESSAGE value="Мелкие правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Мелкие правки" />
+    <MESSAGE value="ООП объекты" />
+    <option name="LAST_COMMIT_MESSAGE" value="ООП объекты" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

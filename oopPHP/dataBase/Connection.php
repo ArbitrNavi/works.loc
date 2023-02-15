@@ -2,9 +2,8 @@
 
 class Connection
 {
-    public static function make()
+    public static function make($config)
     {
-        $pdo = new PDO("mysql:host=localhost;dbname=app;", "root", "");
-        return $pdo;
+        return new PDO("{$config['host']};dbname={$config['databases']};", "{$config['user']}", "{$config['password']}");
     }
 }
