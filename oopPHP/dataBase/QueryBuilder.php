@@ -10,11 +10,10 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    function getAll()
+    function getAll($table)
     {
-        $statement = $this->pdo->prepare("SELECT * FROM Posts"); //ЗАПРОС SELECT
+        $statement = $this->pdo->prepare("SELECT * FROM {$table}"); //ЗАПРОС SELECT
         $statement->execute(); //ПОЛУЧИТЬ РЕЗУЛЬТАТ
-        $posts = $statement->fetchAll(PDO::FETCH_ASSOC); //ПЕРЕДАЕМ ДАННЫЕ В ПЕРЕМЕННУЮ USER
-        return $posts;
+        return $statement->fetchAll(PDO::FETCH_ASSOC); //ПЕРЕДАЕМ ДАННЫЕ В ПЕРЕМЕННУЮ USER
     }
 }

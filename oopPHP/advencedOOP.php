@@ -4,7 +4,7 @@ include "./function.php";
 $db = include './dataBase/start.php';
 
 
-$posts = $db->getAll();
+$posts = $db->getAll('Posts');
 
 
 include 'index.view.php';

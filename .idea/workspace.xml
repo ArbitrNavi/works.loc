@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="ООП объекты">
-      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/config.php" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="7 задание">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/advencedOOP.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/advencedOOP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/QueryBuilder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1676314407325" duration="1035000" />
       <workItem from="1676373419570" duration="5616000" />
       <workItem from="1676410581237" duration="683000" />
-      <workItem from="1676451411961" duration="9809000" />
+      <workItem from="1676451411961" duration="10927000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -334,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676466104574</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="7 задание">
+      <created>1676466958533</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676466958533</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +383,8 @@
     <MESSAGE value="Разделил все функции" />
     <MESSAGE value="Мелкие правки" />
     <MESSAGE value="ООП объекты" />
-    <option name="LAST_COMMIT_MESSAGE" value="ООП объекты" />
+    <MESSAGE value="7 задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="7 задание" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
