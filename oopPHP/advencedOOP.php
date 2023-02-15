@@ -1,9 +1,10 @@
 <?php
 
-include "function.php";
+include "./function.php";
+$db = include './dataBase/start.php';
 
 
-$posts = getAllPosts();
+$posts = $db->getAll();
 
 
 include 'index.view.php';

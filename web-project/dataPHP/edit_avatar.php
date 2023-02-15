@@ -2,8 +2,6 @@
 
 require ('function.php');
 
-var_dump(__DIR__);
-
 if (!empty($_FILES['avatar'])){
     $file = $_FILES['avatar'];
     $name = $file['name'];
@@ -14,7 +12,6 @@ if (!empty($_FILES['avatar'])){
     if (!move_uploaded_file($file['tmp_name'], $pathFile)){
         echo 'Файл не смог загрузиться';
     }
-
     setUserField($_GET['id'], 'avatar', $name);
     redirect_to('../users.php');
 }

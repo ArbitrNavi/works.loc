@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Добавил функцию удаления пользователей и завершил проект">
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Мелкие правки">
       <change afterPath="$PROJECT_DIR$/advenced_oop/dataBasesOOP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsAJAX/1625836754_4-kartinkin-com-p-oboi-s-polochkami-dlya-yarlikov-krasivie-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsAJAX/IMG54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsAJAX/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsAJAX/jquery-3.6.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsAJAX/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/QueryBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/dataBase/start.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpTasks/task_19v2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpTasks/upload.v2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/works.loc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/works.loc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/advencedOOP.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/advencedOOP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpTasks/task_19.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_19.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/dataPHP/edit_avatar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -43,22 +59,27 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2KVwxNOWnxn1LN55do4cG1Xz7fB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/works.loc/web-project",
+    "last_opened_file_path": "C:/OSPanel/domains/works.loc/phpTasks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
     "settings.editor.splitter.proportion": "0.22733814",
     "vue.rearranger.settings.migration": "true"
   },
@@ -70,17 +91,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\works.loc\phpTasks" />
       <recent name="C:\OSPanel\domains\works.loc\web-project" />
       <recent name="C:\OSPanel\domains\works.loc\testProject" />
-      <recent name="C:\OSPanel\domains\works.loc\phpTasks" />
       <recent name="C:\OSPanel\domains\works.loc\testProject\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\works.loc\phpTasks" />
       <recent name="C:\OSPanel\domains\works.loc\Верстка проекта\dataPHP" />
       <recent name="C:\OSPanel\domains\works.loc\Верстка проекта\register" />
       <recent name="C:\OSPanel\domains\works.loc\Верстка проекта" />
       <recent name="C:\OSPanel\domains\works.loc" />
-      <recent name="C:\OSPanel\domains\works.loc\testProject" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -119,7 +140,11 @@
       <workItem from="1676104261750" duration="5538000" />
       <workItem from="1676200724054" duration="2272000" />
       <workItem from="1676236709191" duration="600000" />
-      <workItem from="1676278628346" duration="5198000" />
+      <workItem from="1676278628346" duration="9380000" />
+      <workItem from="1676314407325" duration="1035000" />
+      <workItem from="1676373419570" duration="5616000" />
+      <workItem from="1676410581237" duration="683000" />
+      <workItem from="1676451411961" duration="8993000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -296,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675969933117</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Алгоритм перебора массива">
+      <created>1676286200761</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676286200761</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Разделил все функции">
+      <created>1676460275497</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676460275498</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +353,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Завершил 11 задание" />
     <MESSAGE value="Завершил 12 задание" />
     <MESSAGE value="Начал работу над 13 заданием" />
@@ -334,7 +374,10 @@
     <MESSAGE value="Создал функцию добавления пользователя" />
     <MESSAGE value="Создал функцию добавление фото пользователя" />
     <MESSAGE value="Добавил функцию удаления пользователей и завершил проект" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил функцию удаления пользователей и завершил проект" />
+    <MESSAGE value="Алгоритм перебора массива" />
+    <MESSAGE value="Разделил все функции" />
+    <MESSAGE value="Мелкие правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Мелкие правки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
