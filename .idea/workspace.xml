@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="7 задание">
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="8 задание">
+      <change afterPath="$PROJECT_DIR$/oopPHP/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/store.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oopPHP/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testLesson/img/shop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testLesson/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testLesson/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oopPHP/advencedOOP.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/advencedOOP.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/QueryBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oopPHP/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpTasks/task_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_1.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +67,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/works.loc/phpTasks",
+    "last_opened_file_path": "C:/OSPanel/domains/works.loc/testLesson",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "settings.editor.splitter.proportion": "0.22733814",
     "vue.rearranger.settings.migration": "true"
   },
@@ -75,17 +86,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\works.loc\testLesson" />
       <recent name="C:\OSPanel\domains\works.loc\phpTasks" />
       <recent name="C:\OSPanel\domains\works.loc\web-project" />
       <recent name="C:\OSPanel\domains\works.loc\testProject" />
       <recent name="C:\OSPanel\domains\works.loc\testProject\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\works.loc\oopPHP" />
+      <recent name="C:\OSPanel\domains\works.loc\testLesson\img" />
       <recent name="C:\OSPanel\domains\works.loc\phpTasks" />
       <recent name="C:\OSPanel\domains\works.loc\Верстка проекта\dataPHP" />
       <recent name="C:\OSPanel\domains\works.loc\Верстка проекта\register" />
-      <recent name="C:\OSPanel\domains\works.loc\Верстка проекта" />
-      <recent name="C:\OSPanel\domains\works.loc" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -128,7 +140,9 @@
       <workItem from="1676314407325" duration="1035000" />
       <workItem from="1676373419570" duration="5616000" />
       <workItem from="1676410581237" duration="683000" />
-      <workItem from="1676451411961" duration="10927000" />
+      <workItem from="1676451411961" duration="12615000" />
+      <workItem from="1676569633334" duration="945000" />
+      <workItem from="1676572600635" duration="12395000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -340,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676466958533</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="8 задание">
+      <created>1676468144528</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676468144528</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +380,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Завершил 11 задание" />
     <MESSAGE value="Завершил 12 задание" />
     <MESSAGE value="Начал работу над 13 заданием" />
     <MESSAGE value="Добавил функцию проверки на принадлежность профиля" />
@@ -384,7 +404,8 @@
     <MESSAGE value="Мелкие правки" />
     <MESSAGE value="ООП объекты" />
     <MESSAGE value="7 задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="7 задание" />
+    <MESSAGE value="8 задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="8 задание" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
