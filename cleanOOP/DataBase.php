@@ -4,7 +4,7 @@ class DataBase
 {
     private static $instance = null;
 
-    private $pdo;
+    private $pdo, $query, $result, $error = false, $count;
 
     private function __construct()
     {
@@ -23,10 +23,33 @@ class DataBase
         return self::$instance;
     }
 
-    public function query($sql){
-        $query = $this->pdo->prepare($sql);
-        $query->execute();
-        $result = $query->fetchAll(PDO::FETCH_OBJ);
-        return $result;
+    public function query($sql)
+    {
+        $this->error = false;
+        $this->query = $this->pdo->prepare($sql);
+        if (!$this->query->execute()){
+            $this->error = true;
+        } else {
+            $this->result = $this->query->fetchAll(PDO::FETCH_OBJ);
+            $this->count = $this->query->rowCount();
+        }
+        return $this;
+    }
+
+    public function result()
+    {
+        return $this->result;
+    }
+
+
+    public function getCount()
+    {
+        return $this->count;
+    }
+
+
+    public function error()
+    {
+        return $this->error;
     }
 }

@@ -3,6 +3,14 @@
 include "DataBase.php";
 
 $users = DataBase::getInstance()->query("SELECT * FROM users");
-echo "<pre>";
-var_dump($users);
-echo "</pre>";
+
+if ($users->error()){
+    echo "We have error";
+} else {
+    foreach ($users->result() as $user){
+        echo  $user->id . ". " . $user->username . "<br>";
+    }
+}
+
+
+
