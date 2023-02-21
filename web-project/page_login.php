@@ -47,7 +47,6 @@ session_start();
                 ?>
             </div>
         <?php } ?>
-
         <form action="./dataPHP/login.php" method="post">
             <div class="form-group">
                 <label class="form-label" for="username">Email</label>

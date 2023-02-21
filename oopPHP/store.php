@@ -8,4 +8,4 @@ $db->create("Posts", [
 ]);
 
 
-header('Location: advencedOOP.php');
+header('Location: index.php');
