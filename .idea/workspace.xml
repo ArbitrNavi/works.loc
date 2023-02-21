@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Что-то сделал">
-      <change afterPath="$PROJECT_DIR$/cleanOOP/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oopPHP/.htaccess" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Что-то">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsAJAX/1625836754_4-kartinkin-com-p-oboi-s-polochkami-dlya-yarlikov-krasivie-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsAJAX/IMG54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsAJAX/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsAJAX/jquery-3.6.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsAJAX/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/DataBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/advencedOOP.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/dataBase/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/dataBase/start.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/function/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/function/index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oopPHP/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/oopPHP/store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpDB/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpDB/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpDB/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpTasks/task_14.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpTasks/task_14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-project/page_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/web-project/page_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/DataBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/DataBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +141,7 @@
       <workItem from="1676800564095" duration="2045000" />
       <workItem from="1676878229577" duration="1213000" />
       <workItem from="1676879903661" duration="11865000" />
-      <workItem from="1676936520121" duration="2687000" />
+      <workItem from="1676936520121" duration="3889000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -381,7 +367,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676642872286</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Создал проект">
+      <created>1676983588455</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1676983588455</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Что-то">
+      <created>1676983654409</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1676983654409</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,8 +400,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Начал работу над 13 заданием" />
-    <MESSAGE value="Добавил функцию проверки на принадлежность профиля" />
     <MESSAGE value="Настроил вход пользователя в профиля" />
     <MESSAGE value="Настроил регистрацию пользователя" />
     <MESSAGE value="SQL запросы" />
@@ -425,7 +423,9 @@
     <MESSAGE value="7 задание" />
     <MESSAGE value="8 задание" />
     <MESSAGE value="Что-то сделал" />
-    <option name="LAST_COMMIT_MESSAGE" value="Что-то сделал" />
+    <MESSAGE value="Создал проект" />
+    <MESSAGE value="Что-то" />
+    <option name="LAST_COMMIT_MESSAGE" value="Что-то" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

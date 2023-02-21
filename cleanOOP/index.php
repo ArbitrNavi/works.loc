@@ -1,5 +1,8 @@
 <?php
 
- include "DataBase.php";
+include "DataBase.php";
 
- DataBase::getInstance();
+$users = DataBase::getInstance()->query("SELECT * FROM users");
+echo "<pre>";
+var_dump($users);
+echo "</pre>";
