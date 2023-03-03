@@ -62,6 +62,10 @@ class DataBase
         return $this->error;
     }
 
+    public function first(){
+        return $this->result()[0];
+    }
+
     public function get($table, $where=[])
     {
         return $this->action("SELECT *", $table, $where);
@@ -90,7 +94,30 @@ class DataBase
         return false;
     }
 
-    public function insert () {
-        
+    public function insert ($table, $fields = [])
+    {
+        $values = "";
+        foreach($fields as $field){
+            $values .= " ?,";
+        }
+        $values = rtrim($values, ',');
+        $sql = "INSERT INTO {$table} (`" . implode('`, `',array_keys($fields)) . "`) VALUES (" . $values . ")";
+        if(!$this->query($sql, $fields)->error()){
+            return true;
+        }
+        return false;
+    }
+
+    public function update ($table, $id, $fields = []){
+        $set = "";
+        foreach($fields as $key => $field){
+            $set .= "{$key} = ?,";
+        }
+        $set = rtrim($set, ',');
+        $sql = "UPDATE {$table} SET {$set} WHERE id={$id}";
+        if(!$this->query($sql, $fields)->error()){
+            return true;
+        }
+        return false;
     }
 }
