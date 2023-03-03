@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Сделал вывод значений с базы данных">
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Сделал перехватчик ошибки">
+      <change afterPath="$PROJECT_DIR$/testTest/Trees.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testTest/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cleanOOP/DataBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/DataBase.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cleanOOP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/index.php" afterDir="false" />
@@ -61,7 +63,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/works.loc/oopPHP&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/works.loc&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -141,7 +143,15 @@
       <workItem from="1676800564095" duration="2045000" />
       <workItem from="1676878229577" duration="1213000" />
       <workItem from="1676879903661" duration="11865000" />
-      <workItem from="1676936520121" duration="5404000" />
+      <workItem from="1676936520121" duration="6175000" />
+      <workItem from="1677069848250" duration="2463000" />
+      <workItem from="1677104149050" duration="1466000" />
+      <workItem from="1677152951728" duration="1499000" />
+      <workItem from="1677160428877" duration="2395000" />
+      <workItem from="1677237514039" duration="1467000" />
+      <workItem from="1677755787434" duration="1245000" />
+      <workItem from="1677769989926" duration="1752000" />
+      <workItem from="1677832480741" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -388,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676984625097</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Сделал перехватчик ошибки">
+      <created>1676986100731</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1676986100731</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Настроил регистрацию пользователя" />
     <MESSAGE value="SQL запросы" />
     <MESSAGE value="файлы" />
     <MESSAGE value="Настроил создание пользователя через админа" />
@@ -432,7 +448,8 @@
     <MESSAGE value="Создал проект" />
     <MESSAGE value="Что-то" />
     <MESSAGE value="Сделал вывод значений с базы данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал вывод значений с базы данных" />
+    <MESSAGE value="Сделал перехватчик ошибки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал перехватчик ошибки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
