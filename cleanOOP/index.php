@@ -2,6 +2,8 @@
 
 include "DataBase.php";
 include "Config.php";
+include "Input.php";
+require ("Validation.php");
 
 $GLOBALS['config'] = [
     'mysql' => [
@@ -12,17 +14,54 @@ $GLOBALS['config'] = [
     ]
 ];
 
-// DataBase::getInstance()->delete('users', ['username', '=', 'Murat']);
+if(Input::exists()){
+    $validate = new Validate;
 
-$id = 6;
+    $validation = $validate->check($_POST, [
+        'username' => [
+            'required' => true,
+            'min' => 2,
+            'max' => 15,
+            'unique' => 'users'
+        ],
+        'password' => [
+            'required' => true,
+            'min' => 3,
+        ],
+        'password_again' => [
+            'required' => true,
+            'matches' => 'password',
+        ] 
+    ]);
 
-DataBase::getInstance()->update('users', $id, [
-    'username' => 'Murat',
-    'password' => 123456711,
-]);
+    if($validate->passed()){
+        echo 'passed';
+    } else {
+        foreach($validate->errors() as $error){
+            echo $error . "</br>";
+        }
+    }
+}
 
-$users = DataBase::getInstance()->get('users', ['username', '=', 'Murat'])->result();
+?>
 
-print_r($users);
-
+<form action="" method="post">
+    <div class="field">
+        <label for="username">Username</label>
+        <input type="text" name="username" value="<?php echo Input::get('username'); ?>">
+    </div>
+    <div class="field">
+        <label for="username">Password</label>
+        <input type="text" name="password" >
+    </div>
+    <div class="field">
+        <label for="username">Password_Again</label>
+        <input type="text" name="password_again" >
+    </div>
+    <div class="field">
+        <button type="submit">
+            Отправить
+        </button>
+    </div>
+</form>
 
