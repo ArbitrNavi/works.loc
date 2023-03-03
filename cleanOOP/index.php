@@ -1,6 +1,16 @@
 <?php
 
 include "DataBase.php";
+include "Config.php";
+
+$GLOBALS['config'] = [
+    'mysql' => [
+        'host' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'marlin_clean_oop',
+    ]
+];
 
 // DataBase::getInstance()->delete('users', ['username', '=', 'Murat']);
 
