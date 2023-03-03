@@ -2,15 +2,17 @@
 
 include "DataBase.php";
 
-$users = DataBase::getInstance()->query("SELECT * FROM users");
+DataBase::getInstance()->delete('users', ['username', '=', 'Murat']);
 
-if ($users->error()){
-    echo "We have error";
-} else {
-    foreach ($users->result() as $user){
-        echo  $user->id . ". " . $user->username . "<br>";
-    }
-}
+$users = DataBase::getInstance()->get('users', ['username', '=', 'Alex']);
+
+// if ($users->error()) {
+//     echo "We have error";
+// } else {
+//     foreach ($users->result() as $user) {
+//         echo $user->id . ". " . $user->username . "<br>";
+//     }
+// }
 
 
 

@@ -23,15 +23,24 @@ class DataBase
         return self::$instance;
     }
 
-    public function query($sql)
+    public function query($sql, $params = [])
     {
+
         $this->error = false;
         $this->query = $this->pdo->prepare($sql);
-        if (!$this->query->execute()){
+        if (count($params)) {
+            $i = 1;
+            foreach ($params as $param){
+                $this->query->bindValue($i, $param);
+                $i++;
+            }
+        }
+
+        if (!$this->query->execute()) {
             $this->error = true;
         } else {
             $this->result = $this->query->fetchAll(PDO::FETCH_OBJ);
-            $this->count = $this->query->rowCount();
+            $this->count  = $this->query->rowCount();
         }
         return $this;
     }
@@ -51,5 +60,37 @@ class DataBase
     public function error()
     {
         return $this->error;
+    }
+
+    public function get($table, $where=[])
+    {
+        return $this->action("SELECT *", $table, $where);
+    }
+
+    public function delete ($table, $where=[]) 
+    {
+        return $this->action("DELETE", $table, $where);
+    }
+
+    public function action ($action, $table, $where)
+    {
+        if(count($where) == 3){
+            $operators = ["=", "<", ">", ">=", "<="];
+            $field = $where[0];
+            $operator = $where[1];
+            $value = $where[2];
+            if(in_array($operator, $operators)){
+                $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+                if(!$this->query($sql, [$value])->error()){
+                    return $this;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    public function insert () {
+        
     }
 }
