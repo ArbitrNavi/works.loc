@@ -1,6 +1,10 @@
 <?php
 
 
+namespace classes;
+
+use DataBase;
+
 class Validate
 {
     private $passed = false, $errors = [], $db = null;
@@ -48,7 +52,7 @@ class Validate
             }
         }
 
-        if (empty($this->errors)){
+        if (empty($this->errors)) {
             $this->passed = true;
         }
         return $this;

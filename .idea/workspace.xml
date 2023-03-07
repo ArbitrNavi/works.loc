@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Сделал перехватчик ошибки">
-      <change afterPath="$PROJECT_DIR$/cleanOOP/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleanOOP/Token.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleanOOP/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleanOOP/Validate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cleanOOP/test.php" afterDir="false" />
+    <list default="true" id="8e6cb790-e0a2-4464-a165-6d5850232a23" name="Changes" comment="Hash пароля и создания пользователя">
+      <change afterPath="$PROJECT_DIR$/cleanOOP/classes/Redirect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleanOOP/includes/errors/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleanOOP/init.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleanOOP/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanOOP/DataBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/DataBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanOOP/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/Input.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanOOP/Validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/DataBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/DataBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/Input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/Session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/Token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/classes/Validate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cleanOOP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanOOP/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/cleanOOP/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +161,7 @@
       <workItem from="1677755787434" duration="1245000" />
       <workItem from="1677769989926" duration="1752000" />
       <workItem from="1677832480741" duration="15000" />
-      <workItem from="1678096495228" duration="5084000" />
+      <workItem from="1678096495228" duration="6553000" />
     </task>
     <task id="LOCAL-00001" summary="Завершил 11 задание">
       <created>1675085582299</created>
@@ -411,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676986100731</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Hash пароля и создания пользователя">
+      <created>1678153037309</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1678153037309</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +441,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SQL запросы" />
     <MESSAGE value="файлы" />
     <MESSAGE value="Настроил создание пользователя через админа" />
     <MESSAGE value="Приколдесные штуки" />
@@ -455,7 +465,8 @@
     <MESSAGE value="Что-то" />
     <MESSAGE value="Сделал вывод значений с базы данных" />
     <MESSAGE value="Сделал перехватчик ошибки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал перехватчик ошибки" />
+    <MESSAGE value="Hash пароля и создания пользователя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hash пароля и создания пользователя" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

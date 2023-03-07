@@ -1,5 +1,10 @@
 <?php
 
+
+namespace classes;
+
+use DataBase;
+
 class User
 {
     private $db;
@@ -9,7 +14,8 @@ class User
         $this->db = DataBase::getInstance();
     }
 
-    public function create($fields = []){
+    public function create($fields = [])
+    {
         $this->db->insert("users", $fields);
     }
 }
