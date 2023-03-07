@@ -21,6 +21,11 @@ if (Input::exists()) {
                 'max'      => 15,
                 'unique'   => 'users'
             ],
+            'email' => [
+                'required' => true,
+                'email' => true,
+                'unique' => 'users'
+            ],
             'password'       => [
                 'required' => true,
                 'min'      => 3,
@@ -57,6 +62,10 @@ if (Input::exists()) {
     <div class="field">
         <label for="username">Username</label>
         <input type="text" name="username" value="<?php echo Input::get('username'); ?>">
+    </div>
+    <div class="field">
+        <label for="username">Email</label>
+        <input type="text" name="email" value="<?php echo Input::get('username'); ?>">
     </div>
     <div class="field">
         <label for="username">Password</label>
